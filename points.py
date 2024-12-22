@@ -96,8 +96,8 @@ class Secp256k1:
 # Example usage
 target_hash = "739437bb3dd6d1983e66629c5f08c70e52769371"
 while True:
-    # private_key = random.randint(73786976294838206464, 147573952589676412927)
-    private_key = random.randint(0, 2**256)
+    private_key = random.randint(73786976294838206464, 147573952589676412927)
+    # private_key = random.randint(0, 2**256)
     # print(private_key)
 
     # Generate the public key
