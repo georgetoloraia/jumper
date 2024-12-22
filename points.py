@@ -110,11 +110,13 @@ while True:
             try:
                 rmd = Secp256k1.hash_point(step)
                 # print(f"Step {i + 1}: Hash = {rmd}")
-                if rmd == target_hash:
-                    print(f"Matching step found at step {i + 1}!")
-                    file.write(f"Step {i + 1}: {step}\n")
-                    file.write(f"Matching Hash: {rmd}\nFrom: {private_key}")
-                    break
+                if rmd.startswith("739437bb"):
+                    print(f"Matching Hash: {rmd}\nFrom: {private_key}")
+                    if rmd == target_hash:
+                        print(f"Matching step found at step {i + 1}!")
+                        file.write(f"Step {i + 1}: {step}\n")
+                        file.write(f"Matching Hash: {rmd}\nFrom: {private_key}")
+                        break
             except ValueError as e:
                 # Ignore the point at infinity
                 continue
