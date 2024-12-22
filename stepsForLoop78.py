@@ -115,7 +115,7 @@ target_hash = "739437bb3dd6d1983e66629c5f08c70e52769371"
 # priv_min = random.randint(73786976294838206464, 147573952589676412927)
 # for kee in range(99896976294838206464, 147573952589676412927):
 while True:
-    private_key = random.randint(73786976294838206464, 92233720368547758080)
+    private_key = random.randint(129127208515966861312, 147573952589676412928)
     # private_key = random.randint(0, 2**256)
     # print(private_key)
 
