@@ -129,7 +129,7 @@ while True:
             try:
                 rmd = Secp256k1.hash_point(step)
                 # print(f"Step {i + 1}: Hash = {rmd}")
-                if rmd.startswith("73943"):
+                if rmd.startswith("739437"):
                     index = index + 1
                     print(f"Matching Hash: {rmd}\nFrom: {private_key}")
                     # Send Telegram message
