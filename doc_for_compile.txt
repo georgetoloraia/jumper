@@ -1,0 +1,3 @@
+g++ -o stepscpp stepscpp.cpp -lgmp -lssl -lcrypto -lcurl -fsanitize=address -g
+
+chmod +x start.sh

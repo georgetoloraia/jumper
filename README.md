@@ -1,5 +1,14 @@
-# jumper
+# compile stepscpp
+```
+g++ -o stepscpp stepscpp.cpp -lgmp -lssl -lcrypto -lcurl -fsanitize=address -g
 
+chmod +x start.sh
+
+./start.sh
+```
+
+
+## example:
 ```py
 target_hash = "739437bb3dd6d1983e66629c5f08c70e52769371"
 # priv_min = random.randint(73786976294838206464, 147573952589676412927)
