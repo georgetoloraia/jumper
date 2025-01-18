@@ -65,14 +65,14 @@ class Secp256k1:
                 counting += 1
                 result = Secp256k1.point_add(result, addend)
                 rmd = Secp256k1.hash_point(result)
-                if rmd.startswith("73943"):
+                if rmd.startswith("739437bb3dd"):
                     print(f"From iter: {counting} Matching Hash: {rmd}\nFrom: {result}")
                     print(zebra)
                 # steps.append(result)
             addend = Secp256k1.point_add(addend, addend)
             counting += 1
             rmd = Secp256k1.hash_point(addend)
-            if rmd.startswith("73943"):
+            if rmd.startswith("739437bb3dd"):
                 print(f"From iter: {counting} Matching Hash: {rmd}\nFrom: {addend}")
                 print(zebra)
             # print(addend)
